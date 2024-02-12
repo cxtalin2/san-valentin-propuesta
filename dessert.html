@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Postres:p</title>
+	<style>
+		body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+            background-color:#FFE3E1;
+            color: white;
+        }
+        #dessertquestion {
+            font-size: 50px;
+            margin-bottom: 30px;
+            text-decoration: none  !important;
+            text-shadow: -2px -2px 0 black,  
+                2px -2px 0 black,
+                -2px  2px 0 black,
+                2px  2px 0 black;
+        }
+        .dessert-selection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; 
+        }
+        .dessert-item {
+            width: 20%; 
+            margin: 10px;
+            vertical-align: top;
+            color: black;
+        }
+        
+        .dessert-item img {
+        width: auto; 
+        height: 200px;
+        object-fit: cover; 
+        padding: 10px;
+    }
+        .dessert-item label {
+            display: block;
+        }
+        .button {
+            padding: 10px 20px !important;
+            font-size: 18px !important;
+            cursor: pointer !important;
+            margin: 10px !important;
+            font-family: 'Courier' !important;
+            margin-bottom: 20px !important;
+            background-color:white !important;
+            color: #e67373 !important;
+            border-radius: 12px !important;
+            border: 2px solid #FFE3E1 !important;
+        }
+	</style>
+</head>
+<body>
+	<div id = "dessertquestion">¿Qué postre te gustaría?</div>
+	
+	<div class = "dessert-selection">
+		<div class = "dessert-item">
+			<img src = "food/browni.jpg" alt ="brownie con leche">
+			<label><input type="checkbox" name="dessert" value="brownie con leche">Brownie caliente con leche fría</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/creme-brulee.jpg" alt ="creme-brulee">
+			<label><input type="checkbox" name="dessert" value="creme-brulee">Crème Brûlée de WOK</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/receta-cheesecake-de-limon-con-yogur.jpg" alt ="cheesecake-de-limon">
+			<label><input type="checkbox" name="dessert" value="cheesecake-de-limon">Cheesecake de Limón hecho por mí</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/eclair.jpg" alt ="eclair">
+			<label><input type="checkbox" name="dessert" value="eclair">Eclair Dunkin Donuts</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/popsy.jpg" alt ="malteada">
+			<label><input type="checkbox" name="dessert" value="malteada">Malteada Cherrymanía de Popsy</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/sticky.jpg" alt ="sticky">
+			<label><input type="checkbox" name="dessert" value="sticky">Sticky WOK</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/unico.jpg" alt ="unico">
+			<label><input type="checkbox" name="dessert" value="unico">Único de Buffalo Wings</label>
+		</div>
+		<div class = "dessert-item">
+			<img src = "food/waffle.jpg" alt ="waffle">
+			<label><input type="checkbox" name="dessert" value="waffle">Waffle de Crepes & Waffles</label>
+		</div>
+	</div>
+	<button class = "button" onclick="location.href='activities.html'">Qué pro en HD papu. Sigue por acá UwU</button>
+
+</body>
+</html>

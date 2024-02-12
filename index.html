@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Valentín</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+			background-color:#FFE3E1;
+            color: black;
+        }
+        #valentineQuestion {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .answerButton {
+            padding: 10px 20px !important;
+            font-size: 18px !important;
+            cursor: pointer !important;
+            margin: 10px !important;
+            font-family: 'Courier' !important;
+            margin-bottom: 20px !important;
+            background-color:white !important;
+            color: #e67373 !important;
+            border-radius: 12px !important;
+            border: 2px solid #FFE3E1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="valentineQuestion"><b>¿Te gustaría tener una cita conmigo?</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">Sisas</button>
+    <button class="answerButton" id="noButton">No quiero. Ya no me gustas. No me llames más.</button>
+    <br>
+    <img src ='cat.gif' alt = 'cat asking question' class="responsive">
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function() {
+            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentFontSize + 10) + 'px'; 
+        });
+    </script>
+</body>
+</html>

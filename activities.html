@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Courier';
+    background-color: #FFE3E1;
+    color: white;
+}
+
+#activityquestion {
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-shadow: -2px -2px 0 black,
+                2px -2px 0 black,
+                -2px  2px 0 black,
+                2px  2px 0 black;
+}
+
+.activity-container {
+    width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.activity-item {
+    display: inline-block;
+    width: 20%;
+    padding: 0 10px; 
+    vertical-align: top;
+    color: black;
+}
+
+
+.activity-item img {
+    width: auto; 
+    height: 200px;
+    object-fit: cover; 
+    padding: 10px;
+}
+
+.activity-item label {
+    display: block;
+}
+
+.button {
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    margin: 10px !important;
+    font-family: 'Courier' !important;
+    margin-bottom: 20px !important;
+    background-color: white !important;
+    color: #e67373 !important;
+    border-radius: 12px !important;
+    border: 2px solid #FFE3E1 !important;
+}
+	</style>
+</head>
+<body>
+	<div id="activityquestion"><b>¿Qué te gustaría hacer después, mi amor?</b>
+	</div>
+	<div class = "activities-selection">
+		<div class="activity-item">
+			<img src="activities/plantario.jpeg" alt ="planetario">
+			<label><input type="checkbox" name="activities" value ="planetario">Ir a un show láser del planetario</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/jardin.jpg" alt ="jardin">
+			<label><input type="checkbox" name="activities" value ="jardin">Jardín Botánico</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/cine.jpeg" alt ="cinema">
+			<label><input type="checkbox" name="activities" value ="cinema">Ir a cine</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/keramika.jpeg" alt ="ceramics">
+			<label><input type="checkbox" name="activities" value ="ceramics">Comprar arcilla del dollarcity y hacer cerámicas</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/lol.png" alt ="lol">
+			<label><input type="checkbox" name="activities" value ="lol">Ver LOL Colombia arrunchados</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/parque-alcala-petfriendly.jpg" alt ="park.jpeg">
+			<label><input type="checkbox" name="activities" value ="park.jpeg">Ir a robar el parque de Alcalá</label>
+		</div>
+	</div>
+	<button class = "button" onclick="location.href='lastpage.html'">Última sección:c</button>
+</body>
+</html>

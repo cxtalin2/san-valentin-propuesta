@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida:p</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 30px;
+            font-family: 'Courier';
+            background-color:#FFE3E1;
+            color: white;
+        }
+        #foodquestion {
+            font-size: 50px;
+            margin-bottom: 30px;
+            text-decoration: none  !important;
+            text-shadow: -2px -2px 0 black,  
+                2px -2px 0 black,
+                -2px  2px 0 black,
+                2px  2px 0 black;
+        }
+        .food-selection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start; 
+        }
+        .food-item {
+            width: 20%; 
+            margin: 10px;
+            vertical-align: top;
+            color: black;
+        }
+        
+        .food-item img {
+        width: auto; 
+        height: 200px;
+        object-fit: cover; 
+        padding: 10px;
+    }
+        .food-item label {
+            display: block;
+        }
+        .button {
+            padding: 10px 20px !important;
+            font-size: 18px !important;
+            cursor: pointer !important;
+            margin: 10px !important;
+            font-family: 'Courier' !important;
+            margin-bottom: 20px !important;
+            background-color:white !important;
+            color: #e67373 !important;
+            border-radius: 12px !important;
+            border: 2px solid #FFE3E1 !important;
+        }
+    </style>
+</head>
+<body>
+    <div id="foodquestion"><b><u>¿Qué te gustaría comer, cielito?</u></b></div>
+    
+    <div class="food-selection">
+        <div class="food-item">
+            <img src="food/Hamburguesas Pecado Capital.jpg" alt="Hamburguesa">
+            <label><input type="checkbox" name="food" value="Hamburguesa">Hamburguesa de Pecado Capital o del sitio de tu casa</label>
+        </div>
+        <div class="food-item">
+            <img src="food/arroz-chaufa-peruano-receta.jpg" alt="Arroz Chaufa">
+            <label><input type="checkbox" name="food" value="Arroz Chaufa">Arroz Chaufa de Centro Suba</label>
+        </div>
+        <div class="food-item">
+            <img src="food/macarrones-horno-gratinados.JPG" alt="macarrones-horno-gratinados">
+            <label><input type="checkbox" name="food" value="macarrones-horno-gratinados">Macarrones al Horno de Da Quei Matti</label>
+        </div>
+        <div class="food-item">
+            <img src="food/pastaaaa.jpeg" alt="pasta">
+            <label><input type="checkbox" name="food" value="pasta"> PastaS </label>
+        </div>
+        <div class="food-item">
+            <img src="food/buffalo.jpg" alt="buffalo">
+            <label><input type="checkbox" name="food" value="buffalo">Buffalo Wings antes de que cierre</label>
+        </div>
+        <div class="food-item">
+            <img src="food/Risotto-de-pollo-750x510.jpg" alt="risotto">
+            <label><input type="checkbox" name="food" value="risotto"> Risotto de La Trattoria de la Plaza</label>
+        </div>
+        <div class="food-item">
+            <img src="food/termino-bien-cocido-carne-gourmet-1.jpg" alt="steak">
+            <label><input type="checkbox" name="food" value="steak">Carne término medio de Sagal</label>
+        </div>
+        <div class="food-item">
+            <img src="food/sushi.jpeg" alt="sushi">
+            <label><input type="checkbox" name="food" value="sushi">Sushi de Anguila</label>
+        </div>
+    </div>
+    <button class = "button" onclick="location.href='dessert.html'">Siguiente papu +10 xdXdXD</button>
+    
+</body>
+</html>
